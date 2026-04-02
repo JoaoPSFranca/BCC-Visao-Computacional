@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "3adfc8a23ad4d90f",
+    "type": "split",
+    "children": [
+      {
+        "id": "88a1d9d654b9a967",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3cc1ec30d7e824eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visão Computacional.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Visão Computacional"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8deba854c96a7d91",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a1ed54c79289eee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ce5a059ab80d39f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "59046e0a35d8ca1b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "194b2613160ef29f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "92f9d03844884e8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0bff9eaf6d640fb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2cd6ae968ad308e1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Visão Computacional.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Visão Computacional"
+            }
+          },
+          {
+            "id": "8e613a1ee96a3f74",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Visão Computacional.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Visão Computacional"
+            }
+          },
+          {
+            "id": "be32b67e183d0058",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "0f810be4194005f9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "b16b82d77ca389a9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Visão Computacional.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Visão Computacional"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "3cc1ec30d7e824eb",
+  "lastOpenFiles": [
+    "Visão Computacional.md",
+    "Pasted image 20260401143559.png",
+    "Pasted image 20260401143051.png",
+    "Pasted image 20260401143012.png",
+    "Pasted image 20260328212717.png",
+    "Cap2-Formacao_de_Imagens.pdf",
+    "Cap4-Transformacoes_de_imagem.pdf",
+    "Cap1-Introducao.pdf",
+    "Cap3-Resolucoes.pdf"
+  ]
+}
