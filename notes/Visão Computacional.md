@@ -13,7 +13,24 @@ A *Radiação Eletromagnética (REM)* pode ser definida como uma onda (tendo com
 
 **Sensores Passivos:** são sensores que utilizam de fontes naturais de energia, como a reflexão da luz solar. Então eles meio que só observam e não emitem algo de fato.
 
+**Correlação:** É o processo de mover a máscara (filtro de suavização) e calcular a soma dos produtos em cada posição.
+
+**Convolução:** É o mesmo processo, mas a máscara é rotacionada em 180 graus.
+
 # Aulas de Código
+
+## Bibliotecas
+
+- `import numpy as np` - Serve para fazer ações com arquivos no geral. Nesse contexto, ela é importante para transformar a imagem em um `ndarray` e manipulá-la da melhor forma possível.
+- `from matplotlib import pyplot as plt` - É a biblioteca padrão para mostrar coisas na tela, como gráficos geralmente. Nesse contexto, utilizamos para mostrar as imagens e os histogramas geralmente.
+- `skimage` - Se trata de uma biblioteca de processamento de imagens digitais.
+	- `io` - É o responsável pela entrada e saída de dados. 
+	- `util, img_as_float, img_as_ubyte` - Convertem a imagem entre tipos de dados.
+	- `exposure` (`from skimage.exposure import histogram`) - Fornece a função para calcular a frequência dos tons de cinza.
+	- `color` - Contém as funções para conversão de espaços de cores, como transformar uma imagem colorida (RGB) em tons de cinza (`rgb2gray`).
+- `import cv2` - OpenCV é uma biblioteca para Visão Computacional. O OpenCV vem para "substituir" o Scikit-Image de forma mais focada em performance e aplicações em tempo real. Ideal para tarefas complexas como detecção de objetos e processamento de vídeo.
+
+## Funções
 
  - `imgagem = io.imread('nome_imagem.png')`= server para ler a imagem e carrega na RAM como um `numpy` array.
  
@@ -24,7 +41,7 @@ A *Radiação Eletromagnética (REM)* pode ser definida como uma onda (tendo com
  - `img_as_float()` e `img_as_ubyte()` = são autoexplicativos, servem para converter a resolução radiométrica. As vezes é preciso fazer conta com `float` devido a precisão e depois transformar tudo em inteiro de 8 bits.
 
 - `imagem[0:10, 0:10]` = basicamente é uma forma de fazer *slicing* da imagem para ter acesso à **vizinhança**.
-
+-
 - `r = cores[:, :, 0]` = o código visa isolar a banda zero (Vermelho) do tensor tridimensional `cores` (um vetor de imagem mesmo, lido com o `io.imread()`).
 
  - `L = ((max - min) / 255) * img + min` = é o cálculo para transformar os valores para a escala de 0 a 255, pega o valor máximo e mínimo da imagem, converte um determinado ponto (`img`). 
@@ -161,4 +178,25 @@ Esse tipo de abordagem nos permite realizar pequenas alterações em áreas que 
 Este método de **processamento local**, busca utilizar a média e a variância de cada vizinho para adaptar a transformação do contraste de forma dinâmica, permitindo um processamento mais assertivo da imagem.
 
 
-#
+# Capítulo 8 - Filtros Espaciais de Suavização
+
+A suavização de imagens é utilizada para atenuação de ruídos na imagem. Ao contrário de outros capítulos, a transformação da imagem é calculada não com base no mesmo pixel, mas sim com base nos seus vizinhos. 
+
+Nesse tipo de transformação, utilizamos uma máscara com uma submatriz (geralmente $3\times3$, $5\times5$ ou $7\times7$) e então essa máscara é aplicada sobre a imagem deslizando linha por linha.
+
+## 8.1. Suavização pela Média
+
+$$R(i,j) = \left[\frac{1}{MN}\right] \sum_{m=1}^M \sum_{n=1}^N f(m,n)$$
+> $M$ e $N$ são o tamanho da máscara $M \times N$
+
+A função acima vai gerar o resultado da máscara, onde $\left [\frac{1}{MN} \right ]$ é o valor que será multiplicado em cada ponto da imagem onde a máscara está sendo aplicada e faz a média de acordo com o tamanho da máscara. Então no caso do exemplo de uma máscara $3 \times 3$, seriam somados todos os pontos nesse intervalo e dividido por 9. $$\frac{\left (\sum_{m=1}^3 \sum_{n=1}^3 \right)} 9$$O maior problema disso é que ao aplicar a máscara em "grade", ela vai criar lacunas nas bordas que pode variar de tamanho de acordo com o tamanho da máscara, essa variação segue a fórmula $\frac{(K-1)} 2$. Então $3 \times 3$ tem 1 pixel de borda, $5 \times 5$ tem 2 pixels de borda e por ai vai.
+
+## 8.2. Filtragem Gaussiana
+$$h(x, y) = e^{\frac {x^2+y^2} {2\sigma^2}}$$
+> Em que o $\sigma$ (sigma) é o desvio padrão. Ele controla o nível do borrão, quanto maior o $\sigma$ maior a abertura do sino e mais suave fica a imagem.
+
+A filtragem gaussiana da pesos maiores para os pixels mais próximos do centro, o que faz com que haja uma suavização mais "natural" e preserva melhor as estruturas do que o borrão gerado pela média.
+
+## 8.3.  Mediana
+
+Basicamente aplica a mediana nos pixels afetados pela máscara, ela tem um ponto especial em que ela não cria tons de cinza que não existiam antes. Porém, ela destrói bordas pontudas solitárias e suaviza bordas retas.
