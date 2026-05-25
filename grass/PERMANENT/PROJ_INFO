@@ -1,0 +1,7 @@
+name: UTM zone 22S with based on WGS 84 ellipsoid
+datum: wgs84
+ellps: wgs84
+proj: utm
+zone: 22
+south: defined
+no_defs: defined

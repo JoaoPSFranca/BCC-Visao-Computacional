@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------
+COMMAND: v.db.connect --quiet map="amostras_vetor" driver="sqlite" database="$GISDBASE/$LOCATION_NAME/$MAPSET/sqlite/sqlite.db" table="amostras_vetor" key="cat" layer="1"
+GISDBASE: /home/joao/Documents/github/BCC-Visao-Computacional
+LOCATION: grass MAPSET: PERMANENT USER: joao DATE: Fri May 15 17:18:03 2026
+---------------------------------------------------------------------------------
+COMMAND: v.to.db --overwrite map="amostras_vetor" layer="1" type="point,line,boundary,centroid" option="cat" columns="cat" query_layer="1" separator="pipe" format="plain"
+GISDBASE: /home/joao/Documents/github/BCC-Visao-Computacional
+LOCATION: grass MAPSET: PERMANENT USER: joao DATE: Fri May 15 17:18:03 2026
+---------------------------------------------------------------------------------
+COMMAND: v.db.addtable map=amostras_vetor 'columns=class varchar(30),color varchar(11),n_cells integer,band1_min integer,band2_min integer,band3_min integer,band4_min integer,band5_min integer,band6_min integer,band1_mean double precision,band2_mean double precision,band3_mean double precision,band4_mean double precision,band5_mean double precision,band6_mean double precision,band1_max integer,band2_max integer,band3_max integer,band4_max integer,band5_max integer,band6_max integer'
+GISDBASE: /home/joao/Documents/github/BCC-Visao-Computacional
+LOCATION: grass MAPSET: PERMANENT USER: joao DATE: Fri May 15 17:18:03 2026

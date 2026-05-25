@@ -1,0 +1,243 @@
+[
+  {
+    "command": "r.import input=/home/joao/Documents/github/BCC-Visao-Computacional/asdas/Banda_ETM+1.tif output=Banda_ETM_1",
+    "command_info": {
+      "timestamp": "2026-05-15T16:36:14.062715",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "running"
+    }
+  },
+  {
+    "command": "r.import input=/home/joao/Documents/github/BCC-Visao-Computacional/asdas/Banda_ETM+2.tif output=Banda_ETM_2",
+    "command_info": {
+      "timestamp": "2026-05-15T16:36:14.261959",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "running"
+    }
+  },
+  {
+    "command": "r.import input=/home/joao/Documents/github/BCC-Visao-Computacional/asdas/Banda_ETM+3.tif output=Banda_ETM_3",
+    "command_info": {
+      "timestamp": "2026-05-15T16:36:14.427815",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "running"
+    }
+  },
+  {
+    "command": "r.import input=/home/joao/Documents/github/BCC-Visao-Computacional/asdas/Banda_ETM+4.tif output=Banda_ETM_4",
+    "command_info": {
+      "timestamp": "2026-05-15T16:36:14.587684",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "running"
+    }
+  },
+  {
+    "command": "r.import input=/home/joao/Documents/github/BCC-Visao-Computacional/asdas/Banda_ETM+5.tif output=Banda_ETM_5",
+    "command_info": {
+      "timestamp": "2026-05-15T16:36:14.747366",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "running"
+    }
+  },
+  {
+    "command": "r.import input=/home/joao/Documents/github/BCC-Visao-Computacional/asdas/Banda_ETM+7.tif output=Banda_ETM_7",
+    "command_info": {
+      "timestamp": "2026-05-15T16:36:14.906080",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "success",
+      "runtime": 1
+    }
+  },
+  {
+    "command": "g.list vector",
+    "command_info": {
+      "timestamp": "2026-05-15T17:19:10.498587",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "success"
+    }
+  },
+  {
+    "command": "v.to.rast input=amostras_vetor@PERMANENT output=amostras_raster use=attr attribute_column=cat label_column=class",
+    "command_info": {
+      "timestamp": "2026-05-15T17:25:22.967662",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "success"
+    }
+  },
+  {
+    "command": "i.gensig trainingmap=amostras_raster@PERMANENT group=grupo@PERMANENT subgroup=subgrupo signaturefile=assinaturas",
+    "command_info": {
+      "timestamp": "2026-05-15T17:29:05.687577",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "success"
+    }
+  },
+  {
+    "command": "i.maxlik group=grupo@PERMANENT subgroup=subgrupo signaturefile=assinaturas@PERMANENT output=classificados",
+    "command_info": {
+      "timestamp": "2026-05-15T17:30:41.239915",
+      "mask2d": false,
+      "mask2d_name": "MASK@PERMANENT",
+      "mask3d": false,
+      "mask3d_name": "RASTER3D_MASK@PERMANENT",
+      "region": {
+        "projection": 1,
+        "zone": -22,
+        "n": 7572000.0,
+        "s": 7524870.0,
+        "w": 430000.0,
+        "e": 514990.0,
+        "nsres": 30.0,
+        "ewres": 30.0,
+        "rows": 1571,
+        "cols": 2833,
+        "cells": 4450643
+      },
+      "status": "success"
+    }
+  }
+]
